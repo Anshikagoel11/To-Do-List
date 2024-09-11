@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 145, 166);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    color: rgb(25, 145, 166);
+    text-decoration: underline;
+}
+.todoicon{
+    margin-left: 15px;
+    font-size: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.inner-container{
+    background-color: rgb(37, 35, 35);
+    padding: 10px;
+    width: 40%;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow:  10px 8px 6px rgb(2, 24, 3);
+}
+
+.todolist{
+    width: 100%;  
+    padding: 10px;
+    height: 100%;
+}
+.inputbox{
+    display: flex;
+    justify-content:space-around;
+    padding: 5px;
+}
+#input{
+    background-color: #171616;
+    color: white;
+    border: 2px solid black;
+    height: 40px;
+   border-radius: 5px;
+}
+#add-icon{
+    color: rgb(25, 145, 166);
+    font-size: 24px;
+    padding: 8px;
+    height: 40px;
+}
+.listbox{
+    background-color: rgb(6, 43, 53);
+    height: 75%;
+    width: 100%;
+    padding: 5px; 
+    overflow-y: scroll;
+}
+
+
+.msg{
+    padding: 8px;
+    text-align: center;
+    color: rgb(118, 10, 10);
+    font-size: 20px;
+    /* text-decoration: underline; */
+}
+.list{
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    justify-content: none;
+    gap: 0px;
+}
+.input-task{
+    width: 85%;
+    margin: 2px;
+   
+}
+input{
+    width: 100%;
+    height: 30px;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: rgb(111, 155, 172);
+    color: black;
+}
+.actions{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    padding: 5px;
+}
+.delete{
+    font-size: 22px;
+    margin-right: 3px;
+    color: red;
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.1s ease-in-out;
+    }
+}
+.edit{
+    font-size: 12px;
+    padding: 4px;
+    border-radius: 4px;
+    color:  rgb(25, 145, 166);
+    background-color: black;
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@media screen and (max-width:1052px){
+    .inner-container{
+        width: 60%;
+    }
+}
+@media screen and (max-width:652px){
+    .inner-container{
+        width: 80%;
+    }
+}
+@media screen and (max-width:420px){
+    .inner-container{
+        width: 90%;
+        padding: 0px;
+    }
+
+}
